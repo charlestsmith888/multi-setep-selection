@@ -13,6 +13,7 @@ endif;
 <script src="<?php echo MAINURL; ?>assets/vendor/jquery.steps.min.js"></script>
 <script type="text/javascript" src="<?php echo MAINURL; ?>assets/vendor/jquery.validate.min.js"></script>
 <script type="text/javascript" src="<?php echo MAINURL; ?>assets/vendor/sweetalert.min.js"></script>
+
 <script>
 
 
@@ -40,6 +41,10 @@ endif;
             jQuery(this).closest('.row').find('.col-md-9 .row .col-md-5 h5+p+h5+p').text(benefit);
             jQuery(this).closest('.row').find('.col-md-9 .row .col-md-7 img').attr('src', img);
         });
+
+         jQuery("#delivery-date").datepicker({
+        "minDate": 7,
+    })
     });
 
 
@@ -141,6 +146,7 @@ form.children("div").steps({
         // autoFocus: true,
         onStepChanging: function (event, currentIndex, newIndex){
             if (newIndex==9) {
+                console.log('done');
                 var dataa = form.serializeArray();
                 console.log(dataa);
                 jQuery('ul.personalized_data').html('');

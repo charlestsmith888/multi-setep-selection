@@ -26,6 +26,14 @@ function lms_scripts_styles(){
 	echo '<script src="'.MAINURL.'/assets/vendor/featherlight/featherlight.min.js" type="text/javascript" charset="utf-8"></script>';
 }
 
+function wpse_enqueue_datepicker() {
+    wp_enqueue_script( 'jquery-ui-datepicker' );
+    wp_register_style( 'jquery-ui', 'https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css' );
+    wp_enqueue_style( 'jquery-ui' );  
+}
+add_action( 'wp_enqueue_scripts', 'wpse_enqueue_datepicker' );
+
+
 
 function theme_settings_page(){
     ?>

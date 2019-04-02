@@ -2,6 +2,29 @@
     <div class="container">
         <form id="example-form" action="?submit=true" method="POST">
             <div>
+
+
+
+                <h3>Select A Delivery Date</h3>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <input type="text" name="delivery_date" id="delivery-date" class="form-control" required="required" placeholder="Select Delivery Date">
+                                    </div>
+                                </div>
+                                <div style="clear: both;"></div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
                 <?php
                 global $obj,$wpdb;
                 $form = $wpdb->prefix.'dynamic_form';

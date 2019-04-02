@@ -7,7 +7,7 @@
  * Author URI: #
  * Version: 1.0.0
  * License: GPL2
- * Text Domain: Egoassociate
+ * Text Domain: Caixia
  * Domain Path: 
  */
 
@@ -105,6 +105,7 @@ class  Multistep{
         `pers_msg` varchar(1000) DEFAULT NULL,
         `amount` varchar(20) DEFAULT NULL,
         `ingredients` longtext,
+        `delivery_date` text NOT NULL,
         `billingdata` longtext,
         `transaction_id` varchar(200) DEFAULT NULL,
         `correlationid` varchar(200) DEFAULT NULL,
@@ -162,3 +163,4 @@ function get_page_title_for_slug($page_slug) {
 // Instantiate plugin class and add it to the set of globals.
 $mainobj = new Multistep();
 register_activation_hook(__FILE__, array($mainobj, 'install'));
+

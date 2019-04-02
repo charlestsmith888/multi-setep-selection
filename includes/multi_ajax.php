@@ -46,6 +46,7 @@ function cms_formsubmit(){
 				'amount' => $_POST['amount'], 
 				'ingredients' => json_encode($_POST['Ingredients']), 
 				'billingdata' => json_encode($_POST['billing']), 
+				'delivery_date' => $_POST['delivery_date'],
 				'transaction_id' => $result_array['TRANSACTIONID'], 
 				'correlationid' => $result_array['CORRELATIONID'], 
 				'status' => 'new order', 
