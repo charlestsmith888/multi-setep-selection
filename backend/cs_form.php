@@ -161,6 +161,12 @@ margin-right: 15px;
 						</select>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<label class="col-form-label">Price (optional)</label>
+						<input type="text" class="form-control-plaintext" name="price" value="<?= $row->price;  ?>">	
+					</div>
+				</div>
 				<br>
 				<button type="submit" class="btn btn-primary">Submit</button>
 			</fieldset>

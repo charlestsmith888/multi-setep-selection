@@ -94,8 +94,8 @@ margin-right: 15px;
 					<th scope="col">#</th>
 					<th scope="col">Name</th>
 					<th scope="col">Order</th>
-					<th scope="col">Edit Coupon</th>
-					<th scope="col">Delete Coupon</th>
+					<th scope="col">Edit</th>
+					<th scope="col">Delete</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -106,8 +106,8 @@ margin-right: 15px;
 					<td><?php echo $i; $i++;?></td>
 					<td><?php echo $row->name;?></td>
 					<td><?php echo $row->order;?></td>
-					<td><a href="?page=cs_Types&edit=true&id=<?php echo $row->id; ?>" class="btn btn-primary btn-sm">Edit Coupon</td>
-					<td><a href="?page=cs_Types&delete=<?php echo $row->id; ?>" class="btn btn-primary btn-sm">Delete Coupon</a></td>
+					<td><a href="?page=cs_Types&edit=true&id=<?php echo $row->id; ?>" class="btn btn-primary btn-sm">Edit</td>
+					<td><a href="?page=cs_Types&delete=<?php echo $row->id; ?>" class="btn btn-primary btn-sm">Delete</a></td>
 				</tr>
 				<?php endforeach;?>
 			</tbody>
